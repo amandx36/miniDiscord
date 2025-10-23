@@ -14,19 +14,29 @@ public class Message {
     private String studentName;
     private String content;
     private LocalDateTime timestamp;
+    private MessageType type;
+
+    // enum = special type of variable for which has predefined consant unchangable
+    public enum MessageType {
+        JOIN, CHAT, LEAVE
+    }
 
     // Constructor
     public Message() {
 
     }
 
-public Message(String studentName, String content) {
+    public Message(String studentName, String content, MessageType type) {
         this.studentName = studentName;
         this.content = content;
         this.timestamp = LocalDateTime.now();
+        this.type = type;
     }
 
-    // Getters and Setters
+    // Getters and Setters 
+
+    // to set the value and to get the value !!!
+    
     public String getId() {
         return id;
     }
@@ -58,4 +68,13 @@ public Message(String studentName, String content) {
     public void setTimestamp(LocalDateTime timestamp) {
         this.timestamp = timestamp;
     }
+
+    public MessageType getType() {
+        return type;
+    }
+
+    public void setType(MessageType type) {
+        this.type = type;
+    }
+
 }
