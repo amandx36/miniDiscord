@@ -5,9 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class MiniDiscordApplication {
-
-	public static void main(String[] args) {
-		SpringApplication.run(MiniDiscordApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(MiniDiscordApplication.class, args);
+    }
 }

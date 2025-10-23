@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.CollageProject.collageDiscord.model.Message;
 import com.CollageProject.collageDiscord.repository.MessageRepository;
-import com.CollageProject.*;
+
 
 
 @Service
@@ -22,7 +22,6 @@ public class ChatService {
 
     // extending the custom method to save the data and add console printing for debug !!
 
-    
     public Message saveMessage  (Message message){
         System.out.println("Message is being saved to the mongodb database !!! " + message.getStudentName() + "-- "+message.getContent());
         return messageRepository.save(message);

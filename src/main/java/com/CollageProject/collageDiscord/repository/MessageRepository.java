@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.CollageProject.collageDiscord.model.Message;
 
-public interface MessageRepository extends MongoRepository {
+public interface MessageRepository extends MongoRepository<Message , String> {
 
     // we are making the interface so we can implement the mongo functions such as save find find all and the other things !!! 
 
