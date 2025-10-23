@@ -31,7 +31,7 @@ public class ChatService {
     // making custom method to get all the message 
 
     public List<Message> getAllMessages() {
-        return messageRepository.findAllBYOrderBYTimestampAsc();
+        return messageRepository.findAllByOrderByTimestampAsc();
     }
 
 }

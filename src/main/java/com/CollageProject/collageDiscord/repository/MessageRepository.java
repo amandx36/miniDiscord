@@ -15,6 +15,6 @@ public interface MessageRepository extends MongoRepository<Message , String> {
     // making our first custom made query etch all messages from MongoDB and sort them by the timestamp field in ascending order.  
     // mongodb make query using the functions name !!!
 
-    List<Message> findAllBYOrderBYTimestampAsc();
+    List<Message> findAllByOrderByTimestampAsc();
     
 }
